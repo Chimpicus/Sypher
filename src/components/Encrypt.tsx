@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { PadlockSpinner } from "./PadlockSpinner";
 import FileInput from "./FileInput";
 
 const EncryptFile: React.FC = () => {
