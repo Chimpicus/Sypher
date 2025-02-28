@@ -33,7 +33,10 @@ const EncryptFile: React.FC = () => {
       console.log("fragment: ", fragment);
       //   const encodedFragment = "#" + btoa(fragment);
       const url =
-        `${import.meta.env.VITE_LOCAL_BASE_URL}` + "decrypt" + "#" + fragment;
+        `${import.meta.env.VITE_LOCAL_BASE_URL ?? window.location.origin}/` +
+        "decrypt" +
+        "#" +
+        fragment;
       const iv = window.crypto.getRandomValues(new Uint8Array(12)); // Initialization vector
       const fileBuffer = await file.arrayBuffer(); // Read file as ArrayBuffer
 
