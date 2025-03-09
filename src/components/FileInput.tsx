@@ -55,7 +55,7 @@ const FileInput = ({
         ) : (
           <button
             onClick={() => fn(file!)}
-            className="p-2 py-1 text-xl bg-green-400 text-zinc-800 rounded uppercase"
+            className="p-2 py-1 text-xl bg-green-400 text-slate-900 rounded uppercase"
           >
             {buttonText}
           </button>

@@ -9,13 +9,15 @@ const App = () => {
   return (
     <>
       <Header />
-      <SideNav />
-      <div className="w-full h-screen bg-zinc-800 flex flex-col justify-center items-center pl-64">
-        <Routes>
-          <Route path="/" element={<EncryptFile />} />
-          <Route path="/encrypt" element={<EncryptFile />} />
-          <Route path="/decrypt" element={<DecryptFile />} />
-        </Routes>
+      <div className="w-full h-screen bg-slate-900 flex flex-col justify-center items-start">
+        <SideNav />
+        <div className="w-full h-full flex justify-center items-center">
+          <Routes>
+            <Route path="/" element={<EncryptFile />} />
+            <Route path="/encrypt" element={<EncryptFile />} />
+            <Route path="/decrypt" element={<DecryptFile />} />
+          </Routes>
+        </div>
       </div>
     </>
   );
